@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Space Grotesk", "Inter", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --color-ink: #12141a;
+  --color-panel: #1a1d26;
+  --color-panel-light: #22262f;
+  --color-line: #2c303b;
+  --color-accent: #6ee7b7;
+  --color-accent-dim: #34493f;
+  --color-warn: #fbbf7a;
+  --color-danger: #f28b82;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  background: var(--color-ink);
+  color: #e7e9ee;
+  font-family: var(--font-body);
+}
+
+::selection {
+  background: var(--color-accent);
+  color: #12141a;
+}
